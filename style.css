@@ -1,0 +1,113 @@
+:root {
+    --color-primary-500: hsl(158, 36%, 37%);
+    --color-primary-700: hsl(158, 42%, 18%);
+    --color-neutral-black: hsl(212, 21%, 14%);
+    --color-neutral-grey: hsl(228, 12%, 48%);
+    --color-neutral-cream: hsl(30, 38%, 92%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    background-color: var(--color-neutral-cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--color-neutral-white);
+}
+
+.card_category {
+    color: var(--color-neutral-grey);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.card_img {
+
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card_context {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 30px;
+}
+
+.card_text {
+    color: var(--color-neutral-grey);
+}
+
+.card_title {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Fraunces', sans-serif;
+    color: var(--color-neutral-black);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces', sans-serif;
+    color: var(--color-primary-500);
+    font-size: 2rem;
+}
+
+.price-old {
+    color: var(--color-neutral-grey);
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 15px;
+}
+
+.wrapper-img,
+.card_context {
+    width: 50%;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-neutral-white);
+    background-color: var(--color-primary-500);
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--color-primary-700);
+}
