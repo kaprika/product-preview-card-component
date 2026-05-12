@@ -21,7 +21,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     background-color: var(--color-neutral-cream);
-    height: 100vh;
+    /*  height: 100vh;*/
     display: flex;
     align-items: center;
 }
@@ -110,4 +110,33 @@ body {
 
 .button:hover {
     background-color: var(--color-primary-700);
+}
+
+@media (max-width: 620px) {
+    .card {
+        flex-direction: column;
+        max-width: 360px;
+        height: 600px;
+    }
+
+    .wrapper-img,
+    .card_context {
+        width: 100%;
+        flex: 1;
+    }
+
+    .card_img {
+        height: 100%;
+    }
+
+    .wrapper-img {
+        height: 50%;
+    }
+
+    .card_context {
+        height: 50%;
+    }
+
+
+
 }
